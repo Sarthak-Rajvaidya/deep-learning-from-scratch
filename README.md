@@ -1,6 +1,6 @@
 # 🧠 Deep Learning From Scratch
 
-A hands-on journey to understand **Deep Learning from the ground up** by learning the intuition, mathematics, and implementation behind neural networks before relying on high-level frameworks.
+A hands-on journey to understand **Deep Learning from the ground up** by learning the intuition, mathematics, and implementation behind neural networks before relying heavily on high-level frameworks.
 
 > **Understand → Derive → Implement From Scratch → Experiment → Use Frameworks**
 
@@ -10,7 +10,7 @@ A hands-on journey to understand **Deep Learning from the ground up** by learnin
 
 This repository documents my journey of learning **Deep Learning from scratch**.
 
-The purpose is not simply to use libraries such as PyTorch or TensorFlow, but to understand what actually happens inside a neural network during training.
+The goal is not simply to call high-level APIs such as TensorFlow or PyTorch, but to understand what actually happens inside a neural network during training.
 
 Every major concept is approached in the following way:
 
@@ -18,11 +18,11 @@ Every major concept is approached in the following way:
 2. Learn the mathematical formulation
 3. Derive the important equations
 4. Implement the concept from scratch
-5. Run experiments
+5. Experiment with the implementation
 6. Analyze the results
-7. Later reproduce the same concept using modern frameworks
+7. Implement the concept using modern Deep Learning frameworks
 
-The project will gradually progress from a **single perceptron** to complete neural networks and eventually modern architectures such as **CNNs, RNNs, LSTMs, and Transformers**.
+The project starts from a **single perceptron** and gradually progresses toward **Artificial Neural Networks (ANNs), Deep Neural Networks, CNNs, RNNs, LSTMs, and Transformers**.
 
 ---
 
@@ -33,6 +33,7 @@ The main goals of this repository are:
 - Understand the mathematical foundations of Deep Learning
 - Understand how an artificial neuron works
 - Understand weights and biases
+- Understand weighted sums
 - Understand activation functions
 - Understand forward propagation
 - Understand loss functions
@@ -40,15 +41,26 @@ The main goals of this repository are:
 - Understand the chain rule
 - Understand gradients
 - Understand optimization
-- Implement Gradient Descent from scratch
 - Understand learning rate
+- Implement Gradient Descent from scratch
+- Understand SGD
 - Implement SGD from scratch
+- Understand Mini-Batch SGD
 - Implement Mini-Batch SGD from scratch
-- Understand modern optimizers
-- Build neural networks from scratch
-- Reimplement the concepts using NumPy
-- Eventually move to PyTorch
-- Connect mathematical concepts with real Deep Learning projects
+- Understand adaptive optimizers
+- Understand AdaGrad
+- Understand the limitations of AdaGrad
+- Understand the motivation behind RMSProp
+- Understand Adam and AdamW
+- Understand multiple neurons
+- Understand hidden layers
+- Understand Artificial Neural Networks
+- Implement neural networks from scratch
+- Understand vectorization
+- Implement neural networks using NumPy
+- Implement neural networks using TensorFlow/Keras
+- Eventually explore PyTorch
+- Apply Deep Learning concepts to real-world projects
 
 ---
 
@@ -73,6 +85,9 @@ The overall learning path for this repository is:
                      ┌────────┼────────┐
                      ▼        ▼        ▼
                   Sigmoid    Tanh     ReLU
+                              │
+                              ▼
+                     Activation Derivatives
                               │
                               ▼
                      Forward Propagation
@@ -102,10 +117,10 @@ The overall learning path for this repository is:
                        Mini-Batch SGD
                               │
                               ▼
-                          Momentum
+                          AdaGrad
                               │
                               ▼
-                           RMSProp
+                          RMSProp
                               │
                               ▼
                             Adam
@@ -123,16 +138,16 @@ The overall learning path for this repository is:
                     Artificial Neural Network
                               │
                               ▼
+                       TensorFlow / Keras
+                              │
+                              ▼
                          Vectorization
                               │
                               ▼
                     NumPy Implementation
                               │
                               ▼
-                     ANN From Scratch
-                              │
-                              ▼
-                            PyTorch
+                       ANN From Scratch
                               │
                               ▼
                     Deep Neural Networks
@@ -142,4 +157,13 @@ The overall learning path for this repository is:
                    CNN       RNN      LSTM
                               │
                               ▼
-                         Transformers
+                         Attention
+                              │
+                              ▼
+                        Transformers
+                              │
+                              ▼
+                             LLMs
+                              │
+                              ▼
+                           GenAI
